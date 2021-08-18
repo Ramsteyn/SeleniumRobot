@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.5 on win32)" generated="20210817 18:03:59.088" rpa="false" schemaversion="2">
+<suite id="s1" name="ElementJSON" source="C:\Users\ramadhma\PycharmProjects\RobotAutomation\TestCases\ElementJSON.robot">
+<test id="s1-t1" name="First cases">
+<kw name="Read Locator">
+<var>${UserName}</var>
+<arg>Register.UserName</arg>
+<kw name="Element Value" library="Locators">
+<var>${result}</var>
+<arg>${JsonPath}</arg>
+<msg timestamp="20210817 18:03:59.250" level="INFO">${result} = email</msg>
+<status status="PASS" starttime="20210817 18:03:59.249" endtime="20210817 18:03:59.250"/>
+</kw>
+<msg timestamp="20210817 18:03:59.250" level="INFO">${UserName} = email</msg>
+<status status="PASS" starttime="20210817 18:03:59.249" endtime="20210817 18:03:59.250"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210817 18:03:59.251" level="INFO">Opening browser 'Chrome' to base url 'https://en-gb.facebook.com/'.</msg>
+<status status="PASS" starttime="20210817 18:03:59.251" endtime="20210817 18:04:03.368"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:${UserName}</arg>
+<arg>ramsteyn420@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210817 18:04:03.369" level="INFO">Typing text 'ramsteyn420@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20210817 18:04:03.369" endtime="20210817 18:04:03.445"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:pass</arg>
+<arg>Ramsteyn8$</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210817 18:04:03.446" level="INFO">Typing text 'Ramsteyn8$' into text field 'name:pass'.</msg>
+<status status="PASS" starttime="20210817 18:04:03.445" endtime="20210817 18:04:03.515"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20210817 18:03:59.249" endtime="20210817 18:04:03.515"/>
+</test>
+<test id="s1-t2" name="Second cases">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210817 18:04:03.517" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20210817 18:04:03.517" endtime="20210817 18:04:03.585"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210817 18:04:03.586" endtime="20210817 18:04:05.748"/>
+</kw>
+<status status="PASS" starttime="20210817 18:04:03.516" endtime="20210817 18:04:05.749"/>
+</test>
+<status status="PASS" starttime="20210817 18:03:59.089" endtime="20210817 18:04:05.750"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="ElementJSON">ElementJSON</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,9 @@
+1629192718285	geckodriver	INFO	Listening on 127.0.0.1:59166
+1629192721350	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ramadhma\\AppData\\Local\\Temp\\rust_mozprofilebvzcvc"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1629192723728	Marionette	INFO	Listening on port 49822
+1629192724015	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629192727823	Marionette	INFO	Stopped listening on port 49822
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

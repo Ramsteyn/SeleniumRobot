@@ -1,0 +1,10 @@
+1629192071542	geckodriver	INFO	Listening on 127.0.0.1:61335
+1629192074574	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ramadhma\\AppData\\Local\\Temp\\rust_mozprofileYkNrX6"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1629192076830	Marionette	INFO	Listening on port 57528
+1629192077253	Marionette	WARN	TLS certificate errors will be ignored for this session
+1629192081412	Marionette	INFO	Stopped listening on port 57528
+[Child 13296, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
